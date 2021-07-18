@@ -5,6 +5,7 @@ Checkout the [official document](https://www.mkdocs.org/) for the details of MkD
 This example uses the `material` theme. Check out [here](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes) for the other themes.
 MkDocs uses `Python-Markdown` to generate web page from Markdown.
 See [here](https://facelessuser.github.io/pymdown-extensions/) for the extensions you can use.
+See [here](https://hanshsieh.github.io/mkdocs_example) for the resulting pages.
 
 # Prerequisite
 First, you need to have Python3.
@@ -12,7 +13,6 @@ Then, we need to install some tools if you don't already have.
 ```
 pip3 install mkdocs
 pip3 install pymdown-extensions
-pip3 install pygments
 pip3 install mkdocs-mermaid2-plugin
 # For the "material" theme
 pip3 install mkdocs-material
