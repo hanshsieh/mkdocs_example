@@ -1,0 +1,27 @@
+site_name: My Docs
+site_url: https://example.com/
+theme:
+  name: material
+  features:
+    # See https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs for details
+    - navigation.tabs
+    # See https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#back-to-top-button for details
+    - navigation.top
+plugins:
+    - search
+    - mermaid2
+markdown_extensions:
+  - toc:
+      # See https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#table-of-contents for details
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
+  - pymdownx.tabbed:
+  - pymdownx.details:
+nav:
+  - Home: index.md
+  - Examples:
+    - Code Block: ./examples/code_block.md
