@@ -2,10 +2,10 @@
 This repo shows an example for MkDocs.  
 Checkout the [official document](https://www.mkdocs.org/) for the details of MkDocs.  
 [Here's](https://squidfunk.github.io/mkdocs-material/getting-started/) another good document written by the author of `material` theme.  
-This example uses the `material` theme. Check out [here](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes) for the other themes.
-MkDocs uses `Python-Markdown` to generate web page from Markdown.
-See [here](https://facelessuser.github.io/pymdown-extensions/) for the extensions you can use.
-See [here](https://hanshsieh.github.io/mkdocs_example) for the resulting pages.
+This example uses the `material` theme. Check out [here](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes) for the other themes.  
+MkDocs uses `Python-Markdown` to generate web page from Markdown. See [here](https://facelessuser.github.io/pymdown-extensions/) for the extensions you can use.
+
+[Resulting pages of this example](https://hanshsieh.github.io/mkdocs_example)
 
 # Prerequisite
 First, you need to have Python3.
