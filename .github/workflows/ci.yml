@@ -3,6 +3,9 @@ on:
   push:
     branches: 
       - main
+  pull_request:
+    branches: 
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -11,5 +14,10 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip3 install mkdocs-material 
-      - run: mkdocs gh-deploy --force
+      - name: Install
+        run: pip3 install mkdocs-material mkdocs-mermaid2-plugin
+      - name: Build
+        run: python3 -m mkdocs build
+      - name: Publish
+        if: ${{ github.event_name == 'push'}}
+        run: python3 -m mkdocs gh-deploy --force
